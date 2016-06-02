@@ -9,16 +9,40 @@
  </head>
  <body class="">
   <article>
-   <aside>
+   <nav id="main-nav" class="container-fluid navbar navbar-dark bg-inverse ">
     <div class="container">
+     <div class="nav navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link" href="#">About</a>
+      <form class="form-inline pull-xs-right">
+       <input class="form-control" type="text" placeholder="Search">
+       <button class="btn btn-success-outline" type="submit">Search</button>
+      </form>
+     </div>
     </div>
-   </aside>
-   <header id="main-header" class="container-fluid ">
+   </nav>
+   <header id="main-header" class="container-fluid jumbotron jumbotron-fluid">
     <div class="container">
+     <h1 class="display-3">Fluid jumbotron</h1>
+     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     </div>
    </header>
    <section id="main-section" class="container-fluid ">
     <div class="container">
+     <!-- This block (and any other block) can be replaced using template inheritance, or leave the default content in -->
+     <h2>This <code>&lt;h2&gt;</code> tag is default, yet can be replaced</h2>
+     <p>
+      This <code>&lt;p&gt;</code> tag is default but can be replaced.
+     </p>
+     <div class="card">
+      <img class="card-img-top" src="http://placehold.it/350x150" alt="hello there">
+      <div class="card-block">
+       <h4 class="card-title">hello there</h4>
+       <p class="card-text">This is the text</p>
+      </div>
+     </div>
     </div>
    </section>
    <footer id="main-footer" class="container-fluid ">

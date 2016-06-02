@@ -3,3 +3,13 @@
 {% set page_description = "This is the index page" %}
 {% extends "layouts/layout.njk" %}
 {% block page_title %}Home page test{% endblock %}
+{% set main_header_classes = "jumbotron jumbotron-fluid" %}
+{% import "macros/macro-card.njk" as cards %}
+
+{% block main %}
+  {{ super() }}
+  {% for card in cards %}
+    {{ cards.card("yo") }}
+  {% endfor %}
+  {{ cards.card("http://placehold.it/350x150","hello there", "This is the text") }}
+{% endblock %}

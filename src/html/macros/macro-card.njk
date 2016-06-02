@@ -1,0 +1,9 @@
+{% macro card (card_image, card_title, card_text) %}
+  <div class="card">
+    <img class="card-img-top" src="{{ card_image }}" alt="{{ card_title }}">
+    <div class="card-block">
+      <h4 class="card-title">{{ card_title }}</h4>
+      <p class="card-text">{{ card_text }}</p>
+    </div>
+  </div>
+{% endmacro %}
