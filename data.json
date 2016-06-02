@@ -1,2 +1,19 @@
 {
+  "cards" : [{
+    "card1" : {
+      "card_image" : "http://placehold.it/350x150",
+      "card_title" : "Title for card 1",
+      "card_text" : "This is some card text"
+    },
+    "card2" : {
+      "card_image" : "http://placehold.it/350x150",
+      "card_title" : "Title for card 2",
+      "card_text" : "This is some card text"
+    },
+    "card3" : {
+      "card_image" : "http://placehold.it/350x150",
+      "card_title" : "Title for card 3",
+      "card_text" : "This is some card text"
+    }
+  }]
 }
