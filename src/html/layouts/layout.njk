@@ -9,19 +9,29 @@
   </head>
   <body class="{{ body_classes }}">
   <article>
-    <aside>
+    <nav id="main-nav" class="container-fluid {{ main_nav_classes }}">
       <div class="container">
-        {% block aside %}{% endblock %}
+        {% block nav %}
+          {% include "components/nav.njk" %}
+        {% endblock %}
       </div>
-    </aside>
+    </nav>
     <header id="main-header" class="container-fluid {{ main_header_classes }}">
       <div class="container">
-        {% block header %}{% endblock %}
+        {% block header %}
+          {% include "components/header.njk" %}
+        {% endblock %}
       </div>
     </header>
     <section id="main-section" class="container-fluid {{ main_section_classes }}">
       <div class="container">
-        {% block main %}{% endblock %}
+        {% block main %}
+        <!-- This block (and any other block) can be replaced using template inheritance, or leave the default content in -->
+          <h2>This <code>&lt;h2&gt;</code> tag is default, yet can be replaced</h2>
+          <p>
+            This <code>&lt;p&gt;</code> tag is default but can be replaced.
+          </p>
+        {% endblock %}
       </div>
     </section>
     <footer id="main-footer" class="container-fluid {{ main_footer_classes }}">
