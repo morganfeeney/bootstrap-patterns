@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_title }}</title>
+		<meta name="description" content="{{ page_description }}">
+		<link rel="stylesheet" href="{{ base_path }}css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="{{ body_classes }}">
+  <article>
+    <aside>
+      <div class="container">
+        {% block aside %}{% endblock %}
+      </div>
+    </aside>
+    <header id="main-header" class="container-fluid {{ main_header_classes }}">
+      <div class="container">
+        {% block header %}{% endblock %}
+      </div>
+    </header>
+    <section id="main-section" class="container-fluid {{ main_section_classes }}">
+      <div class="container">
+        {% block main %}{% endblock %}
+      </div>
+    </section>
+    <footer id="main-footer" class="container-fluid {{ main_footer_classes }}">
+      <div class="container">
+        {% block footer %}
+          {% include "components/footer.njk" %}
+        {% endblock %}
+      </div>
+    </footer>
+  </article>
+  </body>
+</html>
