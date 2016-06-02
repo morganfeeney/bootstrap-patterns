@@ -4,12 +4,12 @@
 {% extends "layouts/layout.njk" %}
 {% block page_title %}Home page test{% endblock %}
 {% set main_header_classes = "jumbotron jumbotron-fluid" %}
-{% import "macros/macro-card.njk" as cards %}
 
 {% block main %}
   {{ super() }}
-  {% for card in cards %}
-    {{ cards.card("yo") }}
-  {% endfor %}
-  {{ cards.card("http://placehold.it/350x150","hello there", "This is the text") }}
+  <div class="card-group">
+    {% for card in cards %}
+      {% include "partials/partial-card.njk" %}
+    {% endfor %}
+  </div>
 {% endblock %}
