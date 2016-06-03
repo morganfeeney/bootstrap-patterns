@@ -5,11 +5,18 @@
 {% block page_title %}Home page test{% endblock %}
 {% set main_header_classes = "jumbotron jumbotron-fluid" %}
 
+{% import "macros/macro-card.njk" as macroImport %}
+
 {% block main %}
   {{ super() }}
   <div class="card-group">
     {% for card in cards %}
       {% include "partials/partial-card.njk" %}
+    {% endfor %}
+  </div>
+  <div class="card-group">
+    {% for card in cards %}
+      {{ macroImport.cardMacro(card.card_image, card.card_title, card.card_text) }}
     {% endfor %}
   </div>
 {% endblock %}
