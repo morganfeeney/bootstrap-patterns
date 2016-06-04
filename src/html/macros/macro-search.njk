@@ -1,0 +1,6 @@
+{% macro search(placeHolder="Search stuff...", buttonText="Search") %}
+  <form class="form-inline pull-xs-right">
+    <input class="form-control" type="text" placeholder="{{ placeHolder }}">
+    <button class="btn btn-success-outline" type="submit">{{ buttonText }}</button>
+  </form>
+{% endmacro %}
