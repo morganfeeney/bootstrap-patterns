@@ -1,0 +1,19 @@
+{% extends "layouts/layout.njk" %}
+
+{% set base_path = "../" %}
+{% set page_title = "Home page | Bootstrap Patterns" %}
+{% set page_description = "This is the home page" %}
+{% set main_header_classes = "jumbotron jumbotron-fluid" %}
+
+{% import "macros/macro-card.njk" as macroCard %}
+
+{% block main %}
+  {{ super() }}
+  <div class="card-deck-wrapper">
+    <div class="card-deck">
+    {% for card in cards %}
+      {{ macroCard.cardMacro(card.card_image, card.card_title, card.card_text) }}
+    {% endfor %}
+    </div>
+  </div>
+{% endblock %}
