@@ -1,10 +1,10 @@
-{% macro cardMacro (image, title, text) %}
+{% macro cardMacro (image, title, text, btnText="Button") %}
   <div class="card">
     <img class="card-img-top img-fluid" src="{{ image }}" alt="{{ title }}">
     <div class="card-block">
       <h4 class="card-title">{{ title }}</h4>
       <p class="card-text">{{ text }}</p>
-      <a href="#" class="btn btn-primary">Button</a>
+      <a href="#" class="btn btn-primary">{{ btnText }}</a>
     </div>
   </div>
 {% endmacro %}
