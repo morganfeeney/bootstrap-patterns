@@ -1,0 +1,5 @@
+{% macro alert(class="success", text="<strong>Well done!</strong> You successfully read this important alert message.") %}
+  <div class="alert alert-{{ class }}" role="alert">
+    {{ text | safe }}
+  </div>
+{% endmacro %}

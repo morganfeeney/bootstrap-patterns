@@ -1,0 +1,20 @@
+{% extends "layouts/layout.njk" %}
+
+{% set base_path = "../" %}
+{% set page_title = "Page 2 | Bootstrap Patterns" %}
+{% set page_description = "This is page two." %}
+{% set main_header_classes = "m-t-2 m-b-2" %}
+
+{% import "macros/macro-alert.njk" as macroAlert %}
+
+{% block header %}
+  {% include "components/mini-header.njk" %}
+{% endblock %}
+
+{% block main %}
+  <h1>This is a page of alerts</h1>
+  <p class="lead">Purely to demonstrate macro usage.</p>
+  {{ macroAlert.alert() }}
+  {{ macroAlert.alert(class="info") }}
+  {{ macroAlert.alert(class="danger", text="<strong>Heads up!</strong> This <a href='#' class='alert-link'>alert needs your attention</a>, but it's not super important.") }}
+{% endblock %}

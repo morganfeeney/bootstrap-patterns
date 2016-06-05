@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page 2 | Bootstrap Patterns</title>
+		<meta name="description" content="This is page two.">
+		<link rel="stylesheet" href="../css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="">
+  <article>
+    <nav id="main-nav" class="container-fluid navbar navbar-dark bg-inverse ">
+      <div class="container">
+        
+          
+
+<div class="nav navbar-nav">
+  
+    <a class="nav-item nav-link" href="index.html">Index</a>
+  
+    <a class="nav-item nav-link" href="page1.html">Page 1</a>
+  
+    <a class="nav-item nav-link" href="page2.html">Page 2</a>
+  
+  
+    
+  <form class="form-inline pull-xs-right">
+    <input class="form-control" type="text" placeholder="Search stuff...">
+    <button class="btn btn-success-outline" type="submit">Search</button>
+  </form>
+
+  
+</div>
+
+        
+      </div>
+    </nav>
+    <header id="main-header" class="container-fluid m-t-2 m-b-2">
+      <div class="container">
+        
+  <a class="btn btn-secondary" href="javascript:history.go(-1);">Back</a>
+
+
+      </div>
+    </header>
+    <section id="main-section" class="container-fluid ">
+      <div class="container">
+        
+  <h1>This is a page of alerts</h1>
+  <p class="lead">Purely to demonstrate macro usage.</p>
+  
+  <div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </div>
+
+  
+  <div class="alert alert-info" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </div>
+
+  
+  <div class="alert alert-danger" role="alert">
+    <strong>Heads up!</strong> This <a href='#' class='alert-link'>alert needs your attention</a>, but it's not super important.
+  </div>
+
+
+      </div>
+    </section>
+    <footer id="main-footer" class="container-fluid m-t-3 ">
+      <div class="container">
+        
+          <p>Bootstrap Patterns © 2016 by <strong>Morgan Feeney</strong></p>
+
+        
+      </div>
+    </footer>
+  </article>
+  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.js"></script>
+<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
+<script type="text/javascript">
+  var url = window.location;
+  // Will only work if string in href matches with location
+  //$('.nav a[href="'+ url +'"]').addClass('active');
+
+  // Will also work for relative and absolute hrefs
+  $('.nav a').filter(function() {
+      return this.href == url;
+  }).addClass('active');
+</script>
+
+  
+  </body>
+</html>
