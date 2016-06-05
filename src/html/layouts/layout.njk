@@ -27,23 +27,26 @@
       <div class="container">
         {% block main %}
         <!-- This block (and any other block) can be replaced using template inheritance, or leave the default content in -->
-          <h2>This <code>&lt;h2&gt;</code> tag is default, yet can be replaced</h2>
+          <h2>This <code>&lt;h2&gt;</code> tag appears by default, yet can be replaced</h2>
+          <p class="lead">
+            This <code>&lt;p&gt;</code> tag is also a default but can be replaced.
+          </p>
           <p>
-            This <code>&lt;p&gt;</code> tag is default but can be replaced.
+            <strong>Same here...</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt et eros ac mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed porttitor id tellus a molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam turpis nulla, porta non odio sit amet, sollicitudin condimentum turpis. Ut pulvinar aliquet quam, quis imperdiet quam commodo sit amet. Nulla ut auctor lectus. Morbi nibh neque, feugiat quis nisi sed, porta pretium mauris. Aliquam pellentesque enim lacus, ut hendrerit quam placerat eget. Nunc lacinia sodales lorem ut viverra. Aliquam erat volutpat. Pellentesque diam libero, porttitor ut est porttitor, cursus gravida metus.
           </p>
         {% endblock %}
       </div>
     </section>
-    <footer id="main-footer" class="container-fluid {{ main_footer_classes }}">
+    <footer id="main-footer" class="container-fluid m-t-3 {{ main_footer_classes }}">
       <div class="container">
         {% block footer %}
           {% include "components/footer.njk" %}
         {% endblock %}
       </div>
     </footer>
-    {% block footer_scripts %}
-      {% include "partials/footer-scripts.njk" %}
-    {% endblock %}
   </article>
+  {% block footer_scripts %}
+    {% include "partials/footer-scripts.njk" %}
+  {% endblock %}
   </body>
 </html>

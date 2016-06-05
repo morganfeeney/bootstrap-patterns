@@ -1,0 +1,23 @@
+{% extends "layouts/layout.njk" %}
+
+{% set base_path = "../" %}
+{% set page_title = "Page 1 | Bootstrap Patterns" %}
+{% set page_description = "This is the second page" %}
+{% set main_header_classes = "m-t-2 m-b-2" %}
+
+{% import "macros/macro-card.njk" as macroCard %}
+
+{% import "macros/macro-search.njk" as macroSearch %}
+
+{% block header %}
+  {% include "components/mini-header.njk" %}
+{% endblock %}
+
+{% block main %}
+<h1>Lorem Ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt et eros ac mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed porttitor id tellus a molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam turpis nulla, porta non odio sit amet, sollicitudin condimentum turpis. Ut pulvinar aliquet quam, quis imperdiet quam commodo sit amet. Nulla ut auctor lectus. Morbi nibh neque, feugiat quis nisi sed, porta pretium mauris. Aliquam pellentesque enim lacus, ut hendrerit quam placerat eget. Nunc lacinia sodales lorem ut viverra. Aliquam erat volutpat. Pellentesque diam libero, porttitor ut est porttitor, cursus gravida metus.</p>
+<h2>Dolor sit amet</h2>
+<p>Praesent vel risus eu orci rutrum egestas. Praesent efficitur felis a vehicula imperdiet. Quisque in tellus porttitor, dignissim massa ut, molestie enim. Phasellus sit amet ultrices quam. Ut in arcu ex. Pellentesque fermentum massa at nulla dictum laoreet. Etiam ac nunc tincidunt, varius tortor ut, sollicitudin libero. Suspendisse mattis dapibus ex ac commodo. In a quam dignissim, malesuada lacus sit amet, vulputate felis. Etiam sodales libero aliquam viverra consectetur. Quisque hendrerit mattis metus, quis eleifend felis condimentum at. Phasellus consectetur, eros ac sollicitudin egestas, sem nunc aliquam risus, in ultricies leo tellus consequat urna. Vivamus nec orci in dui facilisis iaculis. Curabitur id imperdiet massa. Donec in efficitur tellus. Nulla facilisi.</p>
+<h3>Consectetur adipiscing elit</h3>
+<p>Praesent sollicitudin dui non tortor finibus interdum. Nullam erat magna, congue tristique ex accumsan, tincidunt elementum magna. Nunc in sodales diam, eu sagittis ipsum. Duis a ullamcorper risus, ac fermentum elit. Cras scelerisque elementum felis eu vestibulum. Maecenas viverra lacus ac dolor dictum, condimentum luctus nibh faucibus. Cras efficitur tristique fermentum. Ut facilisis orci eget metus consequat eleifend. Phasellus a libero vel nibh imperdiet iaculis a ut dolor. Nam velit sem, hendrerit et tempor vel, consectetur euismod lorem. Morbi posuere lorem tellus. Mauris nibh enim, ultricies luctus rhoncus non, congue sit amet massa. Proin tellus felis, volutpat at dui ut, interdum hendrerit metus. Nunc pharetra lacinia venenatis.</p>
+{% endblock %}
