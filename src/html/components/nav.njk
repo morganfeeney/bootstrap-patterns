@@ -1,10 +1,8 @@
+{% import "macros/macro-search.njk" as macroSearch %}
+
 <div class="nav navbar-nav">
   {% for item in navItems %}
-    {% if loop.first %}
-      <a class="nav-item nav-link active" href="#">{{ item.menu_item }} <span class="sr-only">(current)</span></a>
-    {% else %}
-      <a class="nav-item nav-link" href="#">{{ item.menu_item }}</a>
-    {% endif %}
+    <a class="nav-item nav-link" href="{{ item.menu_item | lower | replace(" ", "") }}.html">{{ item.menu_item }}</a>
   {% endfor %}
   {% block navRight %}
     {{ macroSearch.search() }}
