@@ -18,17 +18,13 @@
   ],
   "navItems" : [
     {
-      "menu_item" : "Home"
+      "menu_item" : "Index"
     },
     {
-      "menu_item" : "Features"
+      "menu_item" : "Page 1"
     },
     {
-      "menu_item" : "Pricing"
-    },
-    {
-      "menu_item" : "About"
+      "menu_item" : "Page 2"
     }
-  ],
-  "test": "test text"
+  ]
 }
