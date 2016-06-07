@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 css/**/*.css
 css/**/*.css.map
+templates/*.html
