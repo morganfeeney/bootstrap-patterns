@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-patterns",
-  "description": "Macro componentization of HTML for use with Bootstrap",
-  "version": "0.0.1",
+  "description": "Componentization of HTML, using Nunjucks, Grunt, and Bootstrap",
+  "version": "1.0.0",
   "author": "Morgan Feeney",
   "license": "MIT",
   "devDependencies": {
