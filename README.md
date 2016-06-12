@@ -13,7 +13,7 @@ Once you have your location sorted, `cd` to the root directory of bootstrap-patt
 
 ### Grunt
 
-[Grunt docs:](http://gruntjs.com/getting-started)
+[Grunt docs](http://gruntjs.com/getting-started)
 
 ### Task
 
@@ -21,4 +21,4 @@ Simply run the default task `grunt`, and you'll be good to go.
 
 ## Versioning
 
-I'm following this guide to semantic versioning: http://semver.org/
+I'm following this guide to semantic versioning: http://semver.org/.
