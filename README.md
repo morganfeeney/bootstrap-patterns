@@ -13,7 +13,7 @@ Once you have your location sorted, `cd` to the root directory of bootstrap-patt
 
 ### Grunt
 
-[Grunt docs](http://gruntjs.com/getting-started)
+[Grunt docs](http://gruntjs.com/getting-started).
 
 ### Task
 
