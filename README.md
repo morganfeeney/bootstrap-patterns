@@ -1,7 +1,7 @@
 # Bootstrap Patterns
 _Component led design patterns with Nunjucks, Grunt &amp; Bootstrap._
 
-Working examples of how Nunjucks, Grunt & a CSS framework, Bootstrap in this case, can be combined. It demonstrates how the same reusable design patterns can be combined to achieve multiple variations.
+Working examples of how Nunjucks, Grunt, and a CSS framework (Bootstrap in this case) can be combined. It demonstrates how the same reusable design patterns can be combined to achieve multiple variations.
 
 ## Installation
 
