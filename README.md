@@ -5,7 +5,11 @@ Working demonstrations of how Nunjucks, Grunt, and a CSS framework (Bootstrap in
 
 ## Installation
 
+I'm assuming you already have node before you start if not then you'll need to install it before proceeding.
+
 * Git: `git clone https://github.com/morganfeeney/bootstrap-patterns.git`
+
+Once you have your location sorted, `cd` to the root directory of bootstrap-patterns using terminal (or cmd if using a PC), then run: `npm install` if you have admin rights, otherwise `sudo npm install`. Once NPM has finished with the installation of packages you can run the task `grunt`.
 
 ### Grunt
 
