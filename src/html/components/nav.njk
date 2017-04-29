@@ -1,10 +1,12 @@
 {% import "macros/macro-search.njk" as macroSearch %}
 
-<div class="nav navbar-nav">
+<ul class="navbar-nav mr-auto">
   {% for item in navItems %}
+  <li class="nav-item {% if page_id == item.menu_item %}active{% endif %}">
     <a class="nav-item nav-link" href="{{ item.menu_item | lower | replace(" ", "") }}.html">{{ item.menu_item }}</a>
+  </li>
   {% endfor %}
+</ul>
   {% block navRight %}
     {{ macroSearch.search() }}
   {% endblock %}
-</div>
