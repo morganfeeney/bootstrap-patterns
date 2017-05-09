@@ -5,17 +5,17 @@
   "author": "Morgan Feeney",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^6.0.3",
-    "bootstrap": "^4.0.0-alpha.2",
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-nunjucks-2-html": "^1.0.4",
-    "grunt-postcss": "^0.6.0",
+    "autoprefixer": "^6.7.7",
+    "bootstrap": "^4.0.0-alpha.6",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nunjucks-2-html": "^3.0.0",
+    "grunt-postcss": "^0.8.0",
     "grunt-prettify": "^0.4.0",
-    "grunt-sass": "^1.2.0",
-    "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.1.0"
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
   },
   "repository": {
     "type": "git",
