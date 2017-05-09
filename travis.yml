@@ -1,6 +1,7 @@
-language: javascript
+language: node_js
 
-script: # Modify the commands below to build your repository.
-    - npm install -g grunt-cli
-    - npm install
-    - grunt
+before_script:
+    npm install -g grunt-cli
+    npm install
+
+script: grunt
