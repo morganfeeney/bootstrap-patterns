@@ -1,4 +1,4 @@
-language: nunjucks
+language: javascript
 
 script: # Modify the commands below to build your repository.
     - npm install -g grunt-cli
